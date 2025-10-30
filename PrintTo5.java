@@ -10,6 +10,6 @@ public class PrintTo5 {
                 	i = i + 1;	
             
         }
-        System.out.println("All done!");
+        System.out.println("Done");
     }
  }
