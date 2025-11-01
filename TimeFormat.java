@@ -15,11 +15,43 @@ public class TimeFormat {
         
 		if (12 < hours && hours < 24) 
 		{
+			if (minutes < 10) {
+				System.err.println(hours + ":" + "0" + minutes + " PM");
+			}
+			else
 		System.err.println(hours + ":" + minutes + " PM");	
 
 		}
-		else 
-			System.err.println(hours + ":" + minutes + " AM");	
+		else if (9<hours && hours<13) {
+			if (minutes < 10) {
+				System.err.println(hours + ":" + "0" + minutes + " AM");
+			}
+			else 
+			System.err.println(hours + ":" + minutes + " AM");
+			
+		}
+		else if (hours > 0 && hours < 10)
+		{
+			if (minutes < 10) {
+				System.err.println("0" + hours + ":" + "0" + minutes + " AM");
+			}
+			else 
+			System.err.println("0" + hours + ":" + minutes + " AM");
+		}
+		else if (hours == 0) {
+			if (minutes < 10) {
+				System.err.println("00" + ":" + "0" + minutes + " AM");
+			}
+			else {
+				
+			System.err.println("00" + ":" + minutes + " AM");
+			}
+			
+
+			
+		}
+
+				
 	
 		if (hours == 24) {
 			if (minutes < 10) {
