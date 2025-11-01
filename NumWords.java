@@ -8,7 +8,7 @@ public class NumWords {
 		int secondstep = thenumber-(hundreds*100);
 		int tens= secondstep/10;
 		int units= secondstep-(tens*10);
-		System.out.println(hundreds +" hundreds, "+ tens +" tens, "+ "and " + units +" ones");
+		System.out.println(hundreds +" hundreds, "+ tens +" tens, "+ "and " + units +" ones.");
 		
 
 	}
