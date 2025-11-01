@@ -8,6 +8,6 @@ public class FVCalc {
 		double currentvaluenum = Double.parseDouble(currentvalue);
 		int yearsnum = Integer.parseInt(years);
 		double futurevalue =currentvaluenum* Math.pow((1.0 + interstnum),yearsnum);
-		System.out.println("After " + years + " years, $" + currentvalue + " saved at " + interstnum*100 + "% will yeald $" + (int) futurevalue);
+		System.out.println("After " + years + " years, $" + currentvalue + " saved at " + interstnum*100 + "%25 will yeald $" + (int) futurevalue);
 	}
 }
