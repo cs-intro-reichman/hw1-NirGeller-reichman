@@ -112,12 +112,20 @@ public class TimeFormat {
 		System.err.println("11" + ":" + minutes + " PM");	
 
 		}
-		else if (9<hours && hours<13) {
+		else if (9<hours && hours<12) {
 			if (minutes < 10) {
 				System.err.println(hours + ":" + "0" + minutes + " AM");
 			}
 			else 
 			System.err.println(hours + ":" + minutes + " AM");
+			
+		}
+		else if (hours == 12) {
+			if (minutes < 10) {
+				System.err.println(hours + ":" + "0" + minutes + " PM");
+			}
+			else 
+			System.err.println(hours + ":" + minutes + " PM");
 			
 		}
 		else if (hours > 0 && hours < 10)
